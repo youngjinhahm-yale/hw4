@@ -9,7 +9,7 @@ the reference: models, tools, safety, specs, and the audit trail.
 ```
 Browser (React + Vite, :5173)                        FastAPI backend (:8000, backend/main.py)
 ┌───────────────────────────────┐   /api/*, /images  ┌──────────────────────────────────────────┐
-│ Pages: Home, Shop, Product,   │ ─────────────────▶ │ products · auth · chat · chat/stream ·   │
+│ Pages: Home, Products, Item,  │ ─────────────────▶ │ products · auth · chat · chat/stream ·   │
 │ About, Log in, Sign up        │   (Vite proxy,     │ chat/history                             │
 │ ChatWidget ("Ask Dan")        │    same origin,    │                                          │
 │ ChatResultsPanel (page cards) │    HttpOnly cookie)│ answer_chat():                           │

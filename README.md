@@ -73,7 +73,7 @@ account.
 
 ## Things to try
 
-- **Shop** → filter "In stock in size: XL", then sort by price.
+- **Products** → filter "In stock in size: XL", then sort by price.
 - On any product page, open **Ask Dan** and tap "Is this in stock in M?". The chat checks
   live inventory, and you can watch the tool steps as it works.
 - Ask "What hoodies do you have?". All matching hoodies appear as cards on the page, and

@@ -1,5 +1,8 @@
-fastapi
-uvicorn[standard]
-pydantic[email]
-pydantic-ai-slim[openai]
-python-dotenv
+# Pinned to the versions this project was built and tested with (Python 3.11+).
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+pydantic[email]==2.13.5
+email-validator==2.3.0
+pydantic-ai-slim[openai]==2.54.0
+openai==3.24.0
+python-dotenv==1.2.4

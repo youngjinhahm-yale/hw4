@@ -5,7 +5,7 @@ import YaleMark from './YaleMark'
 
 const links = [
   { to: '/', label: 'Home', end: true },
-  { to: '/products', label: 'Shop' },
+  { to: '/products', label: 'Products' },
   { to: '/about', label: 'About Us' },
 ]
 

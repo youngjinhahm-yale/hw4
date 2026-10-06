@@ -353,5 +353,137 @@
       "input_tokens": 8887,
       "output_tokens": 237
     }
+  },
+  {
+    "time": "2026-10-06T03:11:19+00:00",
+    "run_id": "30226f3039e4",
+    "model": "gpt-5.6-luna",
+    "user": "user:1",
+    "page": "/products",
+    "message": "What navy hoodies do you have in size M?",
+    "steps": [
+      {
+        "t_ms": 2619,
+        "tool": "search_products",
+        "args": "{\"query\":null,\"garment_type\":\"hoodie\",\"color\":\"navy\",\"max_price\":null,\"size_in_stock\":\"M\",\"limit\":30}",
+        "result": "{\"query_summary\":\"garment_type=hoodie, color=navy, size_in_stock=M\",\"match_count\":19,\"matches\":[{\"product_id\":\"basic-hoodie-big-yale\",\"name\":\"Basic Hoodie Big Yale\",\"garment_type\":\"pullover hoodie\",\"…"
+      }
+    ],
+    "stop_reason": "final_result",
+    "duration_ms": 5834,
+    "tool_calls": 1,
+    "output_retries": 0,
+    "reply": "We have 19 navy hoodies with size M in stock, ranging from **$45** to **$88**. The cards show the full selection, including pullover, full-zip, Yale family, and sports styles. 💙",
+    "matches": {
+      "title": "Navy hoodies in M",
+      "count": 19
+    },
+    "usage": {
+      "requests": 2,
+      "input_tokens": 11160,
+      "output_tokens": 366
+    }
+  },
+  {
+    "time": "2026-10-06T03:14:17+00:00",
+    "run_id": "f1c5383147e9",
+    "model": "gpt-5.6-luna",
+    "user": "user:4",
+    "page": "/products/baseball-left-chest-crewneck",
+    "message": "How many of this crewneck are left in each size, and what does it cost?",
+    "steps": [
+      {
+        "t_ms": 1760,
+        "tool": "get_product_info",
+        "args": "{\"product_id\":\"baseball-left-chest-crewneck\"}",
+        "result": "{\"product_id\":\"baseball-left-chest-crewneck\",\"name\":\"Baseball Left Chest Crewneck\",\"garment_type\":\"crewneck sweatshirt\",\"description\":\"Navy long-sleeve crewneck sweatshirt with ribbed collar, cuffs, …"
+      },
+      {
+        "t_ms": 1760,
+        "tool": "check_stock",
+        "args": "{\"product_id\":\"baseball-left-chest-crewneck\"}",
+        "result": "{\"product_id\":\"baseball-left-chest-crewneck\",\"name\":\"Baseball Left Chest Crewneck\",\"price_usd\":58.0,\"requested_size\":null,\"requested_quantity\":null,\"requested_status\":null,\"sizes\":[{\"size\":\"XS\",\"quan…"
+      }
+    ],
+    "stop_reason": "final_result",
+    "duration_ms": 3562,
+    "tool_calls": 2,
+    "output_retries": 0,
+    "reply": "The **Baseball Left Chest Crewneck** costs **$58**. Current stock: - XS: sold out - S: 15 left - M: only 5 left - L: 25 left - XL: sold out - XXL: 25 left",
+    "matches": {
+      "title": "Baseball Left Chest Crewneck",
+      "count": 1
+    },
+    "usage": {
+      "requests": 2,
+      "input_tokens": 9609,
+      "output_tokens": 195
+    }
+  },
+  {
+    "time": "2026-10-06T03:14:23+00:00",
+    "run_id": "c3ced25921d7",
+    "model": "gpt-5.6-luna",
+    "user": "user:4",
+    "page": "/",
+    "message": "What hoodies do you have?",
+    "steps": [
+      {
+        "t_ms": 1557,
+        "tool": "search_products",
+        "args": "{\"garment_type\":\"hoodie\",\"limit\":30}",
+        "result": "{\"query_summary\":\"garment_type=hoodie\",\"match_count\":27,\"matches\":[{\"product_id\":\"basic-hoodie-big-yale\",\"name\":\"Basic Hoodie Big Yale\",\"garment_type\":\"pullover hoodie\",\"colors\":[\"navy blue\",\"white\"]…"
+      }
+    ],
+    "stop_reason": "final_result",
+    "duration_ms": 5484,
+    "tool_calls": 1,
+    "output_retries": 0,
+    "reply": "We have 27 hoodies, priced from **$45** to **$88**. The selection includes pullover and full-zip styles, family hoodies, vintage Bulldog designs, and Yale sports options in navy, white, gray, and cha…",
+    "matches": {
+      "title": "Hoodies",
+      "count": 27
+    },
+    "usage": {
+      "requests": 2,
+      "input_tokens": 11119,
+      "output_tokens": 419
+    }
+  },
+  {
+    "time": "2026-10-06T03:14:36+00:00",
+    "run_id": "433660d09c9b",
+    "model": "gpt-5.6-luna",
+    "user": "user:4",
+    "page": "/products/baseball-left-chest-crewneck",
+    "message": "Is this available in XL? If not, show me something similar in XL.",
+    "steps": [
+      {
+        "t_ms": 1355,
+        "tool": "check_stock",
+        "args": "{\"product_id\":\"baseball-left-chest-crewneck\",\"size\":\"XL\"}",
+        "result": "{\"product_id\":\"baseball-left-chest-crewneck\",\"name\":\"Baseball Left Chest Crewneck\",\"price_usd\":58.0,\"requested_size\":\"XL\",\"requested_quantity\":0,\"requested_status\":\"sold out\",\"sizes\":[{\"size\":\"XS\",\"q…"
+      },
+      {
+        "t_ms": 2980,
+        "tool": "find_similar_products",
+        "args": "{\"product_id\":\"baseball-left-chest-crewneck\",\"size\":\"XL\",\"limit\":6}",
+        "result": "{\"based_on\":\"Baseball Left Chest Crewneck\",\"size_filter\":\"XL\",\"items\":[{\"product_id\":\"hype-and-vice-yale-university-offside-crewneck\",\"name\":\"Hype And Vice Yale University Offside Crewneck\",\"garment_…"
+      }
+    ],
+    "stop_reason": "final_result",
+    "duration_ms": 5250,
+    "tool_calls": 2,
+    "output_retries": 0,
+    "reply": "Sorry, the **Baseball Left Chest Crewneck** is **sold out in XL**. Similar crewnecks available in XL include **Hype And Vice Yale University Offside Crewneck**, **Davenport College Crewneck**, and **…",
+    "matches": {
+      "title": "Similar crewnecks in XL",
+      "count": 6
+    },
+    "usage": {
+      "requests": 3,
+      "input_tokens": 15359,
+      "output_tokens": 299
+    }
   }
 ]
