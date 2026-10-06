@@ -231,3 +231,23 @@ limits, result caps, models, how to run front + back)
 
 None needed. The first prompt was enough to build the audit trail, add the
 safety rules, and finish the harness.
+
+## Problem 13: Push to GitHub and submit the URL
+
+### Prompt typed
+
+Put your code in a folder named hw4 and push it to a public Github repository.
+On canvas, submit the repo URL (the link grader can open and clone). You do not
+upload a zip for this homework. Do not put your real .env, campus_customs.db,
+or product images in the GitHub repo. Use .gitignore. Include .env.example with
+placeholders only. The agent itself is four files under backend/:
+prompts/prompt.md, agent.py, tools.py and models.py. README.md should explain
+how to run the front end and back end after placing the data pack. (I also
+shared screenshots of the expected file layout and the local-only data pack.)
+
+### Follow-up prompt typed
+
+I logged in
+
+The first attempt couldn't push because the GitHub CLI wasn't logged in on this
+machine; after logging in, the repo was created and pushed.
